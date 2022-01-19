@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Menu defaultIndex={0} onSelect={index=>{alert(index)}} mode='vertical'>
+      <Menu defaultIndex={0} onSelect={index=>{alert(index)}} >
         <MenuItem >ckk link1</MenuItem>
         <MenuItem  disabled>ckk link2</MenuItem>
         <MenuItem >ckk link3</MenuItem>

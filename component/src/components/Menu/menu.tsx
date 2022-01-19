@@ -16,7 +16,7 @@ export interface MenuProps{
 interface IMenuContext {
     index: number;
     onSelect?: (selectedIndex: number) => void;
-    mode?: MenuMode;
+    mode?: MenuMode; 
     defaultOpenSubMenus?: string[];  
   }
 

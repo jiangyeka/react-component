@@ -2,13 +2,21 @@ import React from 'react';
 import Button,{ButtonType,ButtonSize} from './components/Button/button';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
-
 import Icon from './components/Icon/icon';
+
+import Menu from './components/Menu/menu'
+import MenuItem from './components/Menu/menuItem'
 library.add(fas)
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <Menu defaultIndex={0} onSelect={index=>{alert(index)}}>
+        <MenuItem index={0}>ckk link1</MenuItem>
+        <MenuItem index={1} disabled>ckk link2</MenuItem>
+        <MenuItem index={2}>ckk link3</MenuItem>
+      </Menu>
+
 
       <Icon icon="coffee" theme="danger" size='10x'/>
 

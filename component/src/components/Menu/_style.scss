@@ -49,7 +49,7 @@
       transform: rotate(180deg) !important;
     }
   }
-  .viking-submenu {
+  .jiangye-submenu {
     display: none;
     list-style:none;
     padding-left: 0;
@@ -65,7 +65,7 @@
       }
     }
   }
-  .viking-submenu.menu-opened {
+  .jiangye-submenu.menu-opened {
     display: block;
   }
 }
@@ -73,7 +73,7 @@
   >.menu-item {
     border-bottom: $menu-item-active-border-width solid transparent;
   }
-  .viking-submenu {
+  .jiangye-submenu {
     position: absolute;
     background: $white;
     z-index: 100;

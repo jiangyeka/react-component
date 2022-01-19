@@ -38,8 +38,8 @@ describe('test Menu and MenuItem component in default(horizontal) mode', () => {
     expect(menuElement).toBeInTheDocument()
     expect(menuElement).toHaveClass('jiangye-menu test')
     expect(menuElement.querySelectorAll(':scope > li').length).toEqual(3)
-    expect(activeElement).toHaveClass('jiangye-menu-item is-active')
-    expect(disabledElement).toHaveClass('jiangye-menu-item is-disabled')
+    expect(activeElement).toHaveClass('menu-item is-active')
+    expect(disabledElement).toHaveClass('menu-item is-disabled')
   })
   it('click items should change active and call the right callback', () => {
     const thirdItem = wrapper.getByText('xyz')

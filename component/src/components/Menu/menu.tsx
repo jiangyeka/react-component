@@ -44,7 +44,7 @@ const renderChildren=()=>{
   return React.Children.map(children,(child,index)=>{
     const childElement=child as React.FunctionComponentElement<MenuItemProps>
     const {displayName} =childElement.type
-    if(displayName==='MenuItem'){
+    if(displayName==='MenuItem'|| displayName==='SubMenu'){
       return React.cloneElement(childElement,{
         index
       })

@@ -6,15 +6,20 @@ import Icon from './components/Icon/icon';
 
 import Menu from './components/Menu/menu'
 import MenuItem from './components/Menu/menuItem'
+import Submenu from './components/Menu/subMenu'
 library.add(fas)
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Menu defaultIndex={0} onSelect={index=>{alert(index)}}>
-        <MenuItem index={0}>ckk link1</MenuItem>
-        <MenuItem index={1} disabled>ckk link2</MenuItem>
-        <MenuItem index={2}>ckk link3</MenuItem>
+      <Menu defaultIndex={0} onSelect={index=>{alert(index)}} mode='vertical'>
+        <MenuItem >ckk link1</MenuItem>
+        <MenuItem  disabled>ckk link2</MenuItem>
+        <MenuItem >ckk link3</MenuItem>
+        <Submenu title='dropdown'>
+        <MenuItem >ckk link1</MenuItem>
+        <MenuItem  disabled>ckk link2</MenuItem>
+        </Submenu>
       </Menu>
 
 

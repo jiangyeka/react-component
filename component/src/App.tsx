@@ -1,18 +1,19 @@
-import React from 'react';
-import Button,{ButtonType,ButtonSize} from './components/Button/button';
+import React, { useState } from 'react';
+import Button from './components/Button/button';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import Icon from './components/Icon/icon';
-
 import Menu from './components/Menu/menu'
 import MenuItem from './components/Menu/menuItem'
 import Submenu from './components/Menu/subMenu'
+import Transition from './components/Transition/transition'
 library.add(fas)
 function App() {
+  const [show,setShow]=useState(false)
   return (
     <div className="App">
       <header className="App-header">
-      <Menu defaultIndex='0' onSelect={index=>{alert(index)}} mode='vertical' defaultOpenSubMenus={['3']} >
+      <Menu defaultIndex='0' onSelect={index=>{alert(index)}}  defaultOpenSubMenus={['3']} >
         <MenuItem >ckk link1</MenuItem>
         <MenuItem  disabled>ckk link2</MenuItem>
         <MenuItem >ckk link3</MenuItem>
@@ -21,17 +22,14 @@ function App() {
         <MenuItem  >ckk link2</MenuItem>
         </Submenu>
       </Menu>
-
-
+<Button size='lg' onClick={()=>{setShow(!show)}}>Toggle</Button>
+<Transition in={show} timeout={300} animation='zoom-in-left'>
+<div>
       <Icon icon="coffee" theme="danger" size='10x'/>
 
         <Button className='cuntom'>fff</Button>
         <Button onClick={e=>{e.preventDefault();alert(123)}}> Default Button </Button>
         <Button disabled> Disabled Button </Button>
-        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}> Large Primary </Button>
-        <Button btnType={ButtonType.Danger} size={ButtonSize.Small}> Small Danger </Button>
-        <Button btnType={ButtonType.Link} href="http://www.baidu.com" target="_blank"> Link  </Button>
-        <Button btnType={ButtonType.Link} disabled href="http://www.baidu.com"> Disabled Link  </Button>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -43,6 +41,9 @@ function App() {
         >
           Learn React
         </a>
+        <Button size='lg' >fffff</Button>
+        </div>
+        </Transition>
       </header>
     </div>
   );

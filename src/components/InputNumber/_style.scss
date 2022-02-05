@@ -1,0 +1,42 @@
+.number-arrow-up, .number-arrow-down {
+  display: inline-block;
+  text-align: center;
+  .svg-inline--fa.fa-w-10 {
+    width: 1.5em;
+  }
+}
+.number-arrow-up > svg {
+  display: inline-block;
+  margin-left: -2em;
+}
+.number-arrow-up > svg:hover, .number-arrow-down > svg:hover {
+  cursor: pointer;
+  background-color: lighten($primary, 30%);
+}
+.number-arrow-down > svg {
+  display: inline-block;
+  vertical-align: -1.125em;
+  margin-left: -2em;
+}
+
+.calculator-icon {
+  margin-left: -1.5em;
+  margin-top: 0.75em;
+}
+
+.number-calculator {
+  position: absolute;
+  right: 0;
+  top: 2.5em;
+  box-shadow: $dropdown-shadow;
+  span {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+    line-height: 2;
+    &:hover {
+      cursor: pointer;
+      background-color: lighten($primary, 30%);
+    }
+  }
+}

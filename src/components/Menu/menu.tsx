@@ -34,7 +34,7 @@ export const Menu: React.FC<MenuProps> =
    style, children, onSelect,
    defaultOpenSubs = []
 }) => {
-  const classes = classNames('viking-menu', className, {
+  const classes = classNames('jiangye-menu', className, {
     'menu-vertical': mode === 'vertical',
     'menu-horizontal': mode !== 'vertical',
   });

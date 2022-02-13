@@ -12,13 +12,13 @@ const Template: Story<ICardProps> = (args) => <Card {...args}/>
 export const Default = Template.bind({});
 Default.args = {
   size: 'large',
-  avatar: 'https://avatars1.githubusercontent.com/u/35620253?s=460&u=a19d1b0c806d2c45338d1cfaa186a8f832416577&v=4',
+  avatar: 'https://img1.baidu.com/it/u=970557741,210992709&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=284',
   description: '这是一段description，这个例子用来演示。这是一段description，这个例子用来演示这是一段description，这个例子用来演示这是一段description，这个例子用来演示这是一段description，这个例子用来演示'
 }
 
 export const WithoutTitle = Template.bind({});
 WithoutTitle.args = {
     size: 'middle',
-    avatar: 'https://avatars1.githubusercontent.com/u/35620253?s=460&u=a19d1b0c806d2c45338d1cfaa186a8f832416577&v=4',
+    avatar: 'https://img1.baidu.com/it/u=970557741,210992709&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=284',
     description: '这是一段description，这个例子用来演示。这是一段description，这个例子用来演示这是一段description，这个例子用来演示这是一段description，这个例子用来演示这是一段description，这个例子用来演示'
 }

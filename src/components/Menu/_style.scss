@@ -1,4 +1,4 @@
-.viking-menu {
+.jiangye-menu {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
@@ -44,7 +44,7 @@
             }
         }
     }
-    .viking-submenu {
+    .jiangye-submenu {
         flex-direction: column;
         // 不用display控制是否显示, 用CSSTransition的属性控制元素是否存在
         list-style: none;
@@ -60,7 +60,7 @@
             }
         }
     }
-    .viking-submenu.menu-opened {
+    .jiangye-submenu.menu-opened {
     }
 }
 
@@ -74,7 +74,7 @@
                 $menu-item-active-color;
         }
     }
-    .viking-submenu {
+    .jiangye-submenu {
         position: absolute;
         background: $white;
         z-index: 1;

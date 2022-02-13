@@ -1,4 +1,4 @@
-.viking-input-wrapper {
+.jiangye-input-wrapper {
   display: flex;
   width: $input-max-width;
   max-width: 500px;
@@ -36,16 +36,16 @@
       &:hover {
         color: darken($blue, 30%)
       }
-      .viking-icon {
+      .jiangye-icon {
         margin-left: 3px;
       }
     }
   }
 }
-.icon-wrapper+.viking-input-inner {
+.icon-wrapper+.jiangye-input-inner {
   padding-right: 35px;
 }
-.viking-input-inner {
+.jiangye-input-inner {
   width: 100%;
   padding: $input-padding-y $input-padding-x;
   font-family: $input-font-family;
@@ -81,8 +81,8 @@
     opacity: 1;
   }
 }
-.viking-input-group-prepend,
-.viking-input-group-append {
+.jiangye-input-group-prepend,
+.jiangye-input-group-append {
   display: flex;
   align-items: center;
   padding: $input-padding-y $input-padding-x;
@@ -96,29 +96,29 @@
   background-color: $input-group-addon-bg;
   border: $input-border-width solid $input-group-addon-border-color;
 }
-.viking-input-group-append + .btn {
+.jiangye-input-group-append + .btn {
   padding: 0;
   border: 0;
 }
 
-.input-size-sm .viking-input-inner {
+.input-size-sm .jiangye-input-inner {
   padding: $input-padding-y-sm $input-padding-x-sm;
   font-size: $input-font-size-sm;
   border-radius: $input-border-radius-sm;
 }
 
-.input-size-lg .viking-input-inner {
+.input-size-lg .jiangye-input-inner {
   padding: $input-padding-y-lg $input-padding-x-lg;
   font-size: $input-font-size-lg;
   border-radius: $input-border-radius-lg;
 }
 
-.input-group > .viking-input-group-prepend,
-.input-group.input-group-append > .viking-input-inner {
+.input-group > .jiangye-input-group-prepend,
+.input-group.input-group-append > .jiangye-input-inner {
   @include border-left-radius(6px);
 }
 
-.input-group > .viking-input-group-append,
-.input-group.input-group-prepend > .viking-input-inner {
+.input-group > .jiangye-input-group-append,
+.input-group.input-group-prepend > .jiangye-input-inner {
   @include border-right-radius(6px);
 }

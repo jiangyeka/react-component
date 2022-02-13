@@ -33,9 +33,9 @@ export const Progress: React.FC<ProgressProps> =
      theme = "primary"
   }) => {
     return (
-      <div className="viking-progress-bar" style={styles}>
-        <div className="viking-progress-bar-outer" style={{height: `${strokeHeight}px`}}>
-          <div className={`viking-progress-bar-inner color-${theme}`} style={{width: `${percent}%`}}>
+      <div className="jiangye-progress-bar" style={styles}>
+        <div className="jiangye-progress-bar-outer" style={{height: `${strokeHeight}px`}}>
+          <div className={`jiangye-progress-bar-inner color-${theme}`} style={{width: `${percent}%`}}>
             {showText && <span className="inner-text">{`${percent}%`}</span>}
           </div>
         </div>

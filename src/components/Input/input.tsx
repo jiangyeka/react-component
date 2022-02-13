@@ -45,14 +45,14 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
 }
 
 /**
- * .viking-input-wrapper .is-disabled .input-size-lg/.input-size-sm
+ * .jiangye-input-wrapper .is-disabled .input-size-lg/.input-size-sm
  * .input-group .input-group-append .input-group-prepend .input-inner
  */
 export const Input: React.FC<InputProps> = (props) => {
   const {disabled, size, icon, prepend, append, style,placeholder, children,inputRef,
     onIconClick, ...restProps} = props;
 
-  const classes = classNames('viking-input-wrapper', {
+  const classes = classNames('jiangye-input-wrapper', {
     'is-disabled': disabled,
     [`input-size-${size}`]: size,
     'input-group': prepend || append,
@@ -62,14 +62,14 @@ export const Input: React.FC<InputProps> = (props) => {
 
   return (
     <div className={classes} style={style}>
-      {prepend && <div className="viking-input-group-prepend">{prepend}</div>}
+      {prepend && <div className="jiangye-input-group-prepend">{prepend}</div>}
       {icon && <div className="icon-wrapper" onClick={onIconClick} ><Icon icon={icon}/></div>}
       <input placeholder={placeholder}
-             className="viking-input-inner" ref={inputRef}
+             className="jiangye-input-inner" ref={inputRef}
              disabled={disabled} {...restProps} />
       {children}
       {append && 
-      <div className="viking-input-group-append">{append}</div>
+      <div className="jiangye-input-group-append">{append}</div>
       }
     </div>
   )

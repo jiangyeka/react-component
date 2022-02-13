@@ -62,7 +62,7 @@ export const MultipleSelect: React.FC<SelectProps> =
         setShowList(false);
     });
     return (
-        <div className="viking-select-wrapper" ref={componentRef}>
+        <div className="jiangye-select-wrapper" ref={componentRef}>
             <Input icon={showList ? 'arrow-up' : 'arrow-down'}
             placeholder=""
             onIconClick={() => setShowList(!showList)}
